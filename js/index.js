@@ -6,10 +6,10 @@ function startCalc(target){
 
 function promptCalculator(){
   var num1 = parseFloat(prompt("Input number 1"));
-  var op = prompt("Input operator");
+  var op = prompt("Input operator (+,-,*,/,%,^,_,$)");
   var num2 = parseFloat(prompt("Input number 2"));
 
-  if(isNaN(num1)|| isNaN(num2)) return "Invalid number input.";
+  if(isNaN(num1) || isNaN(num2)) return "Invalid number input.";
 
   switch(op){
     case "+": {return num1+num2; break;}
